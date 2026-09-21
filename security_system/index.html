@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arduino Security System</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            background: #020617;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #334155;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #38bdf8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .status {
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            background: #1e293b;
+            margin-bottom: 20px;
+        }
+
+        #statusText {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .safe {
+            color: #22c55e;
+        }
+
+        .danger {
+            color: #ef4444;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #38bdf8;
+        }
+
+        .distance {
+            font-size: 42px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .green {
+            background: #22c55e;
+            color: white;
+        }
+
+        .red {
+            background: #ef4444;
+            color: white;
+        }
+
+        .blue {
+            background: #0ea5e9;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+            background: black;
+            margin-top: 10px;
+        }
+
+        #preview {
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 10px;
+            display: none;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            background: #334155;
+            border-radius: 8px;
+        }
+
+        .connection {
+            text-align: center;
+            margin-top: 20px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🚨 Arduino Security System</h1>
+</header>
+
+<div class="container">
+
+    <!-- STATUS -->
+    <div class="status">
+
+        <div id="statusText" class="safe">
+            SYSTEM STARTING...
+        </div>
+
+        <p id="connectionText">
+            Connecting to Arduino...
+        </p>
+
+    </div>
+
+
+    <div class="grid">
+
+        <!-- DISTANCE -->
+        <div class="card">
+
+            <h2>📡 Distance Sensor</h2>
+
+            <div class="distance">
+                <span id="distance">--</span> cm
+            </div>
+
+            <p>
+                Detection range:
+                <strong>50 cm</strong>
+            </p>
+
+        </div>
+
+
+        <!-- LED CONTROL -->
+        <div class="card">
+
+            <h2>💡 LED Control</h2>
+
+            <button
+                class="green"
+                onclick="controlLED('on')">
+                Turn LED ON
+            </button>
+
+            <button
+                class="red"
+                onclick="controlLED('off')">
+                Turn LED OFF
+            </button>
+
+        </div>
+
+
+        <!-- BUZZER CONTROL -->
+        <div class="card">
+
+            <h2>🔊 Buzzer Control</h2>
+
+            <button
+                class="green"
+                onclick="controlBuzzer('on')">
+                Turn Buzzer ON
+            </button>
+
+            <button
+                class="red"
+                onclick="controlBuzzer('off')">
+                Turn Buzzer OFF
+            </button>
+
+        </div>
+
+
+        <!-- CAMERA -->
+        <div class="card">
+
+            <h2>📷 Camera</h2>
+
+            <button
+                class="blue"
+                onclick="startCamera()">
+                Open Camera
+            </button>
+
+            <video
+                id="camera"
+                autoplay
+                playsinline>
+            </video>
+
+            <button
+                class="green"
+                onclick="takePicture()">
+                📸 Take Picture
+            </button>
+
+            <canvas
+                id="canvas"
+                style="display:none;">
+            </canvas>
+
+            <img
+                id="preview"
+                alt="Captured picture">
+
+        </div>
+
+
+        <!-- UPLOAD -->
+        <div class="card">
+
+            <h2>🖼️ Upload Picture</h2>
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/*">
+
+            <button
+                class="blue"
+                onclick="uploadImage()">
+                Upload Picture
+            </button>
+
+            <p id="uploadStatus"></p>
+
+        </div>
+
+    </div>
+
+    <div class="connection">
+        Arduino Security Dashboard
+    </div>
+
+</div>
+
+
+<script>
+
+let cameraStream = null;
+
+
+// ----------------------------------------
+// Get Arduino status
+// ----------------------------------------
+
+async function updateStatus() {
+
+    try {
+
+        const response = await fetch("/status");
+
+        const data = await response.json();
+
+        const distanceElement =
+            document.getElementById("distance");
+
+        const statusElement =
+            document.getElementById("statusText");
+
+        const connectionElement =
+            document.getElementById("connectionText");
+
+
+        // Distance
+
+        if (data.distance > 0) {
+
+            distanceElement.textContent =
+                data.distance.toFixed(1);
+
+        } else {
+
+            distanceElement.textContent = "--";
+        }
+
+
+        // Connection
+
+        if (data.connected) {
+
+            connectionElement.textContent =
+                "🟢 Arduino connected";
+
+        } else {
+
+            connectionElement.textContent =
+                "🔴 Arduino disconnected";
+        }
+
+
+        // Alert
+
+        if (data.alert) {
+
+            statusElement.textContent =
+                "🚨 PERSON DETECTED!";
+
+            statusElement.className =
+                "danger";
+
+        } else {
+
+            statusElement.textContent =
+                "✓ AREA CLEAR";
+
+            statusElement.className =
+                "safe";
+        }
+
+    }
+
+    catch (error) {
+
+        document.getElementById(
+            "connectionText"
+        ).textContent =
+            "🔴 Server connection error";
+
+    }
+}
+
+
+// ----------------------------------------
+// LED
+// ----------------------------------------
+
+async function controlLED(state) {
+
+    try {
+
+        await fetch("/led/" + state);
+
+    }
+
+    catch (error) {
+
+        alert("Could not control LED");
+
+    }
+}
+
+
+// ----------------------------------------
+// Buzzer
+// ----------------------------------------
+
+async function controlBuzzer(state) {
+
+    try {
+
+        await fetch("/buzzer/" + state);
+
+    }
+
+    catch (error) {
+
+        alert("Could not control buzzer");
+
+    }
+}
+
+
+// ----------------------------------------
+// Camera
+// ----------------------------------------
+
+async function startCamera() {
+
+    try {
+
+        cameraStream =
+            await navigator.mediaDevices.getUserMedia({
+                video: true,
+                audio: false
+            });
+
+        document.getElementById(
+            "camera"
+        ).srcObject = cameraStream;
+
+    }
+
+    catch (error) {
+
+        alert(
+            "Camera could not be opened. " +
+            "Please allow camera permission."
+        );
+
+    }
+}
+
+
+// ----------------------------------------
+// Take picture
+// ----------------------------------------
+
+function takePicture() {
+
+    const video =
+        document.getElementById("camera");
+
+    const canvas =
+        document.getElementById("canvas");
+
+    const preview =
+        document.getElementById("preview");
+
+
+    if (!video.srcObject) {
+
+        alert("Open the camera first.");
+
+        return;
+    }
+
+
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+
+
+    const context =
+        canvas.getContext("2d");
+
+
+    context.drawImage(
+        video,
+        0,
+        0,
+        canvas.width,
+        canvas.height
+    );
+
+
+    preview.src =
+        canvas.toDataURL("image/png");
+
+    preview.style.display = "block";
+}
+
+
+// ----------------------------------------
+// Upload picture
+// ----------------------------------------
+
+async function uploadImage() {
+
+    const input =
+        document.getElementById("imageInput");
+
+    const status =
+        document.getElementById("uploadStatus");
+
+
+    if (!input.files.length) {
+
+        alert("Please select a picture first.");
+
+        return;
+    }
+
+
+    const formData =
+        new FormData();
+
+    formData.append(
+        "image",
+        input.files[0]
+    );
+
+
+    try {
+
+        status.textContent =
+            "Uploading...";
+
+
+        const response =
+            await fetch(
+                "/upload",
+                {
+                    method: "POST",
+                    body: formData
+                }
+            );
+
+
+        const data =
+            await response.json();
+
+
+        if (data.success) {
+
+            status.textContent =
+                "✅ Picture uploaded successfully.";
+
+        } else {
+
+            status.textContent =
+                "❌ " + data.message;
+
+        }
+
+    }
+
+    catch (error) {
+
+        status.textContent =
+            "❌ Upload failed.";
+
+    }
+}
+
+
+// ----------------------------------------
+// Update every 500 ms
+// ----------------------------------------
+
+setInterval(
+    updateStatus,
+    500
+);
+
+updateStatus();
+
+</script>
+
+</body>
+</html>
