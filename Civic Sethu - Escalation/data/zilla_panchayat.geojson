@@ -1,0 +1,38 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mysuru Zilla Panchayat"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.95,
+              11.75
+            ],
+            [
+              77.05,
+              11.75
+            ],
+            [
+              77.05,
+              12.850000000000001
+            ],
+            [
+              75.95,
+              12.850000000000001
+            ],
+            [
+              75.95,
+              11.75
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

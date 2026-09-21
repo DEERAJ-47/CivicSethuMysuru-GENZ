@@ -1,0 +1,311 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mysuru",
+        "taluk": "Mysuru"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.55,
+              12.205
+            ],
+            [
+              76.73,
+              12.205
+            ],
+            [
+              76.73,
+              12.385
+            ],
+            [
+              76.55,
+              12.385
+            ],
+            [
+              76.55,
+              12.205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hunsur",
+        "taluk": "Hunsur"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.2,
+              12.22
+            ],
+            [
+              76.38000000000001,
+              12.22
+            ],
+            [
+              76.38000000000001,
+              12.4
+            ],
+            [
+              76.2,
+              12.4
+            ],
+            [
+              76.2,
+              12.22
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "H.D. Kote",
+        "taluk": "H.D. Kote"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.24,
+              12
+            ],
+            [
+              76.42,
+              12
+            ],
+            [
+              76.42,
+              12.18
+            ],
+            [
+              76.24,
+              12.18
+            ],
+            [
+              76.24,
+              12
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "K.R. Nagar",
+        "taluk": "K.R. Nagar"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.28,
+              12.35
+            ],
+            [
+              76.46000000000001,
+              12.35
+            ],
+            [
+              76.46000000000001,
+              12.53
+            ],
+            [
+              76.28,
+              12.53
+            ],
+            [
+              76.28,
+              12.35
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nanjangud",
+        "taluk": "Nanjangud"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.59,
+              12.03
+            ],
+            [
+              76.77000000000001,
+              12.03
+            ],
+            [
+              76.77000000000001,
+              12.209999999999999
+            ],
+            [
+              76.59,
+              12.209999999999999
+            ],
+            [
+              76.59,
+              12.03
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Periyapatna",
+        "taluk": "Periyapatna"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.97999999999999,
+              12.26
+            ],
+            [
+              76.16,
+              12.26
+            ],
+            [
+              76.16,
+              12.44
+            ],
+            [
+              75.97999999999999,
+              12.44
+            ],
+            [
+              75.97999999999999,
+              12.26
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "T. Narasipura",
+        "taluk": "T. Narasipura"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.82,
+              12.120000000000001
+            ],
+            [
+              77,
+              12.120000000000001
+            ],
+            [
+              77,
+              12.3
+            ],
+            [
+              76.82,
+              12.3
+            ],
+            [
+              76.82,
+              12.120000000000001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sargur",
+        "taluk": "Sargur"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.34,
+              11.94
+            ],
+            [
+              76.52000000000001,
+              11.94
+            ],
+            [
+              76.52000000000001,
+              12.12
+            ],
+            [
+              76.34,
+              12.12
+            ],
+            [
+              76.34,
+              11.94
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saligrama",
+        "taluk": "Saligrama"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.25,
+              12.47
+            ],
+            [
+              76.43,
+              12.47
+            ],
+            [
+              76.43,
+              12.65
+            ],
+            [
+              76.25,
+              12.65
+            ],
+            [
+              76.25,
+              12.47
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

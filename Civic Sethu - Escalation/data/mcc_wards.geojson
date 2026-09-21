@@ -1,0 +1,705 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Devaraja Mohalla",
+        "ward_no": 1,
+        "Ward_Name": "Devaraja Mohalla"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.58539999999999,
+              12.2418
+            ],
+            [
+              76.6054,
+              12.2418
+            ],
+            [
+              76.6054,
+              12.2618
+            ],
+            [
+              76.58539999999999,
+              12.2618
+            ],
+            [
+              76.58539999999999,
+              12.2418
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lashkar Mohalla",
+        "ward_no": 2,
+        "Ward_Name": "Lashkar Mohalla"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.60739999999998,
+              12.2418
+            ],
+            [
+              76.6274,
+              12.2418
+            ],
+            [
+              76.6274,
+              12.2618
+            ],
+            [
+              76.60739999999998,
+              12.2618
+            ],
+            [
+              76.60739999999998,
+              12.2418
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sunnadakeri",
+        "ward_no": 3,
+        "Ward_Name": "Sunnadakeri"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.62939999999999,
+              12.2418
+            ],
+            [
+              76.6494,
+              12.2418
+            ],
+            [
+              76.6494,
+              12.2618
+            ],
+            [
+              76.62939999999999,
+              12.2618
+            ],
+            [
+              76.62939999999999,
+              12.2418
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mandu Mohalla",
+        "ward_no": 4,
+        "Ward_Name": "Mandu Mohalla"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.6514,
+              12.2418
+            ],
+            [
+              76.6714,
+              12.2418
+            ],
+            [
+              76.6714,
+              12.2618
+            ],
+            [
+              76.6514,
+              12.2618
+            ],
+            [
+              76.6514,
+              12.2418
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Agrahara",
+        "ward_no": 5,
+        "Ward_Name": "Agrahara"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.67339999999999,
+              12.2418
+            ],
+            [
+              76.6934,
+              12.2418
+            ],
+            [
+              76.6934,
+              12.2618
+            ],
+            [
+              76.67339999999999,
+              12.2618
+            ],
+            [
+              76.67339999999999,
+              12.2418
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "K.R. Mohalla",
+        "ward_no": 6,
+        "Ward_Name": "K.R. Mohalla"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.58539999999999,
+              12.2638
+            ],
+            [
+              76.6054,
+              12.2638
+            ],
+            [
+              76.6054,
+              12.2838
+            ],
+            [
+              76.58539999999999,
+              12.2838
+            ],
+            [
+              76.58539999999999,
+              12.2638
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chamundipuram",
+        "ward_no": 7,
+        "Ward_Name": "Chamundipuram"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.60739999999998,
+              12.2638
+            ],
+            [
+              76.6274,
+              12.2638
+            ],
+            [
+              76.6274,
+              12.2838
+            ],
+            [
+              76.60739999999998,
+              12.2838
+            ],
+            [
+              76.60739999999998,
+              12.2638
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lakshmipuram",
+        "ward_no": 8,
+        "Ward_Name": "Lakshmipuram"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.62939999999999,
+              12.2638
+            ],
+            [
+              76.6494,
+              12.2638
+            ],
+            [
+              76.6494,
+              12.2838
+            ],
+            [
+              76.62939999999999,
+              12.2838
+            ],
+            [
+              76.62939999999999,
+              12.2638
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vontikoppal",
+        "ward_no": 9,
+        "Ward_Name": "Vontikoppal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.6514,
+              12.2638
+            ],
+            [
+              76.6714,
+              12.2638
+            ],
+            [
+              76.6714,
+              12.2838
+            ],
+            [
+              76.6514,
+              12.2838
+            ],
+            [
+              76.6514,
+              12.2638
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kuvempunagar",
+        "ward_no": 10,
+        "Ward_Name": "Kuvempunagar"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.67339999999999,
+              12.2638
+            ],
+            [
+              76.6934,
+              12.2638
+            ],
+            [
+              76.6934,
+              12.2838
+            ],
+            [
+              76.67339999999999,
+              12.2838
+            ],
+            [
+              76.67339999999999,
+              12.2638
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vijayanagar",
+        "ward_no": 11,
+        "Ward_Name": "Vijayanagar"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.58539999999999,
+              12.2858
+            ],
+            [
+              76.6054,
+              12.2858
+            ],
+            [
+              76.6054,
+              12.3058
+            ],
+            [
+              76.58539999999999,
+              12.3058
+            ],
+            [
+              76.58539999999999,
+              12.2858
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jayanagar",
+        "ward_no": 12,
+        "Ward_Name": "Jayanagar"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.60739999999998,
+              12.2858
+            ],
+            [
+              76.6274,
+              12.2858
+            ],
+            [
+              76.6274,
+              12.3058
+            ],
+            [
+              76.60739999999998,
+              12.3058
+            ],
+            [
+              76.60739999999998,
+              12.2858
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hebbal",
+        "ward_no": 13,
+        "Ward_Name": "Hebbal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.62939999999999,
+              12.2858
+            ],
+            [
+              76.6494,
+              12.2858
+            ],
+            [
+              76.6494,
+              12.3058
+            ],
+            [
+              76.62939999999999,
+              12.3058
+            ],
+            [
+              76.62939999999999,
+              12.2858
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yadavagiri",
+        "ward_no": 14,
+        "Ward_Name": "Yadavagiri"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.6514,
+              12.2858
+            ],
+            [
+              76.6714,
+              12.2858
+            ],
+            [
+              76.6714,
+              12.3058
+            ],
+            [
+              76.6514,
+              12.3058
+            ],
+            [
+              76.6514,
+              12.2858
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Metagalli",
+        "ward_no": 15,
+        "Ward_Name": "Metagalli"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.67339999999999,
+              12.2858
+            ],
+            [
+              76.6934,
+              12.2858
+            ],
+            [
+              76.6934,
+              12.3058
+            ],
+            [
+              76.67339999999999,
+              12.3058
+            ],
+            [
+              76.67339999999999,
+              12.2858
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bannimantapa",
+        "ward_no": 16,
+        "Ward_Name": "Bannimantapa"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.58539999999999,
+              12.3078
+            ],
+            [
+              76.6054,
+              12.3078
+            ],
+            [
+              76.6054,
+              12.3278
+            ],
+            [
+              76.58539999999999,
+              12.3278
+            ],
+            [
+              76.58539999999999,
+              12.3078
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kesare",
+        "ward_no": 17,
+        "Ward_Name": "Kesare"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.60739999999998,
+              12.3078
+            ],
+            [
+              76.6274,
+              12.3078
+            ],
+            [
+              76.6274,
+              12.3278
+            ],
+            [
+              76.60739999999998,
+              12.3278
+            ],
+            [
+              76.60739999999998,
+              12.3078
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Udayagiri",
+        "ward_no": 18,
+        "Ward_Name": "Udayagiri"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.62939999999999,
+              12.3078
+            ],
+            [
+              76.6494,
+              12.3078
+            ],
+            [
+              76.6494,
+              12.3278
+            ],
+            [
+              76.62939999999999,
+              12.3278
+            ],
+            [
+              76.62939999999999,
+              12.3078
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gayathripuram",
+        "ward_no": 19,
+        "Ward_Name": "Gayathripuram"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.6514,
+              12.3078
+            ],
+            [
+              76.6714,
+              12.3078
+            ],
+            [
+              76.6714,
+              12.3278
+            ],
+            [
+              76.6514,
+              12.3278
+            ],
+            [
+              76.6514,
+              12.3078
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nazarbad",
+        "ward_no": 20,
+        "Ward_Name": "Nazarbad"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.67339999999999,
+              12.3078
+            ],
+            [
+              76.6934,
+              12.3078
+            ],
+            [
+              76.6934,
+              12.3278
+            ],
+            [
+              76.67339999999999,
+              12.3278
+            ],
+            [
+              76.67339999999999,
+              12.3078
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kasaba",
+        "hobli": "Kasaba"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.59,
+              12.245
+            ],
+            [
+              76.69,
+              12.245
+            ],
+            [
+              76.69,
+              12.345
+            ],
+            [
+              76.59,
+              12.345
+            ],
+            [
+              76.59,
+              12.245
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jayapura",
+        "hobli": "Jayapura"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.67,
+              12.239999999999998
+            ],
+            [
+              76.77,
+              12.239999999999998
+            ],
+            [
+              76.77,
+              12.34
+            ],
+            [
+              76.67,
+              12.34
+            ],
+            [
+              76.67,
+              12.239999999999998
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Varuna",
+        "hobli": "Varuna"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.65,
+              12.19
+            ],
+            [
+              76.75,
+              12.19
+            ],
+            [
+              76.75,
+              12.290000000000001
+            ],
+            [
+              76.65,
+              12.290000000000001
+            ],
+            [
+              76.65,
+              12.19
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bilikere",
+        "hobli": "Bilikere"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.27,
+              12.27
+            ],
+            [
+              76.36999999999999,
+              12.27
+            ],
+            [
+              76.36999999999999,
+              12.370000000000001
+            ],
+            [
+              76.27,
+              12.370000000000001
+            ],
+            [
+              76.27,
+              12.27
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hullahalli",
+        "hobli": "Hullahalli"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.67,
+              12.03
+            ],
+            [
+              76.77,
+              12.03
+            ],
+            [
+              76.77,
+              12.13
+            ],
+            [
+              76.67,
+              12.13
+            ],
+            [
+              76.67,
+              12.03
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sosale",
+        "hobli": "Sosale"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.83,
+              12.18
+            ],
+            [
+              76.92999999999999,
+              12.18
+            ],
+            [
+              76.92999999999999,
+              12.280000000000001
+            ],
+            [
+              76.83,
+              12.280000000000001
+            ],
+            [
+              76.83,
+              12.18
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bettadapura",
+        "hobli": "Bettadapura"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.02,
+              12.319999999999999
+            ],
+            [
+              76.11999999999999,
+              12.319999999999999
+            ],
+            [
+              76.11999999999999,
+              12.42
+            ],
+            [
+              76.02,
+              12.42
+            ],
+            [
+              76.02,
+              12.319999999999999
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saligrama",
+        "hobli": "Saligrama"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.29,
+              12.51
+            ],
+            [
+              76.39,
+              12.51
+            ],
+            [
+              76.39,
+              12.610000000000001
+            ],
+            [
+              76.29,
+              12.610000000000001
+            ],
+            [
+              76.29,
+              12.51
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hanchipura",
+        "hobli": "Hanchipura"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.39,
+              11.959999999999999
+            ],
+            [
+              76.49,
+              11.959999999999999
+            ],
+            [
+              76.49,
+              12.06
+            ],
+            [
+              76.39,
+              12.06
+            ],
+            [
+              76.39,
+              11.959999999999999
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

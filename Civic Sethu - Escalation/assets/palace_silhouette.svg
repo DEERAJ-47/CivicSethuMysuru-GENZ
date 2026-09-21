@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMax meet">
+  <defs>
+    <linearGradient id="palaceGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5D061"/>
+      <stop offset="100%" stop-color="#B8892B"/>
+    </linearGradient>
+    <linearGradient id="palaceDeep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B6B2E"/>
+      <stop offset="100%" stop-color="#4A3512"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base platform -->
+  <rect x="50" y="355" width="1100" height="45" fill="url(#palaceDeep)"/>
+  <rect x="40" y="345" width="1120" height="12" fill="url(#palaceGold)"/>
+
+  <!-- Left tower -->
+  <rect x="90" y="220" width="70" height="125" fill="url(#palaceGold)"/>
+  <rect x="95" y="200" width="60" height="25" fill="url(#palaceDeep)"/>
+  <polygon points="80,200 125,140 170,200" fill="url(#palaceGold)"/>
+  <rect x="120" y="105" width="10" height="40" fill="url(#palaceDeep)"/>
+  <circle cx="125" cy="100" r="8" fill="#F5D061"/>
+  <rect x="108" y="240" width="34" height="50" fill="#4A3512" opacity="0.55"/>
+  <rect x="108" y="300" width="34" height="30" fill="#4A3512" opacity="0.55"/>
+
+  <!-- Right tower -->
+  <rect x="1040" y="220" width="70" height="125" fill="url(#palaceGold)"/>
+  <rect x="1045" y="200" width="60" height="25" fill="url(#palaceDeep)"/>
+  <polygon points="1030,200 1075,140 1120,200" fill="url(#palaceGold)"/>
+  <rect x="1070" y="105" width="10" height="40" fill="url(#palaceDeep)"/>
+  <circle cx="1075" cy="100" r="8" fill="#F5D061"/>
+  <rect x="1058" y="240" width="34" height="50" fill="#4A3512" opacity="0.55"/>
+  <rect x="1058" y="300" width="34" height="30" fill="#4A3512" opacity="0.55"/>
+
+  <!-- Main central block -->
+  <rect x="200" y="240" width="800" height="105" fill="url(#palaceGold)"/>
+  <rect x="200" y="225" width="800" height="20" fill="url(#palaceDeep)"/>
+
+  <!-- Central dome -->
+  <path d="M 500 225 Q 500 130 600 110 Q 700 130 700 225 Z" fill="url(#palaceGold)"/>
+  <rect x="555" y="70" width="90" height="45" fill="url(#palaceDeep)"/>
+  <polygon points="600,30 615,70 585,70" fill="#F5D061"/>
+  <circle cx="600" cy="25" r="10" fill="#F5D061"/>
+  <rect x="596" y="10" width="8" height="20" fill="#B8892B"/>
+
+  <!-- Side domes -->
+  <path d="M 340 225 Q 340 175 400 165 Q 460 175 460 225 Z" fill="url(#palaceGold)"/>
+  <rect x="378" y="140" width="44" height="30" fill="url(#palaceDeep)"/>
+  <polygon points="400,110 410,140 390,140" fill="#F5D061"/>
+  <circle cx="400" cy="105" r="6" fill="#F5D061"/>
+
+  <path d="M 740 225 Q 740 175 800 165 Q 860 175 860 225 Z" fill="url(#palaceGold)"/>
+  <rect x="778" y="140" width="44" height="30" fill="url(#palaceDeep)"/>
+  <polygon points="800,110 810,140 790,140" fill="#F5D061"/>
+  <circle cx="800" cy="105" r="6" fill="#F5D061"/>
+
+  <!-- Columns across the facade -->
+  <g fill="url(#palaceDeep)" opacity="0.65">
+    <rect x="230" y="255" width="14" height="90"/>
+    <rect x="280" y="255" width="14" height="90"/>
+    <rect x="330" y="255" width="14" height="90"/>
+    <rect x="380" y="255" width="14" height="90"/>
+    <rect x="430" y="255" width="14" height="90"/>
+    <rect x="480" y="255" width="14" height="90"/>
+    <rect x="530" y="255" width="14" height="90"/>
+    <rect x="580" y="255" width="14" height="90"/>
+    <rect x="630" y="255" width="14" height="90"/>
+    <rect x="680" y="255" width="14" height="90"/>
+    <rect x="730" y="255" width="14" height="90"/>
+    <rect x="780" y="255" width="14" height="90"/>
+    <rect x="830" y="255" width="14" height="90"/>
+    <rect x="880" y="255" width="14" height="90"/>
+    <rect x="930" y="255" width="14" height="90"/>
+    <rect x="980" y="255" width="14" height="90"/>
+  </g>
+
+  <!-- Arched windows -->
+  <g fill="#3D2A0E" opacity="0.7">
+    <path d="M 250 300 L 250 330 L 274 330 L 274 300 Q 262 285 250 300 Z"/>
+    <path d="M 300 300 L 300 330 L 324 330 L 324 300 Q 312 285 300 300 Z"/>
+    <path d="M 350 300 L 350 330 L 374 330 L 374 300 Q 362 285 350 300 Z"/>
+    <path d="M 400 300 L 400 330 L 424 330 L 424 300 Q 412 285 400 300 Z"/>
+    <path d="M 450 300 L 450 330 L 474 330 L 474 300 Q 462 285 450 300 Z"/>
+    <path d="M 500 300 L 500 330 L 524 330 L 524 300 Q 512 285 500 300 Z"/>
+    <path d="M 550 300 L 550 330 L 574 330 L 574 300 Q 562 285 550 300 Z"/>
+    <path d="M 600 300 L 600 330 L 624 330 L 624 300 Q 612 285 600 300 Z"/>
+    <path d="M 650 300 L 650 330 L 674 330 L 674 300 Q 662 285 650 300 Z"/>
+    <path d="M 700 300 L 700 330 L 724 330 L 724 300 Q 712 285 700 300 Z"/>
+    <path d="M 750 300 L 750 330 L 774 330 L 774 300 Q 762 285 750 300 Z"/>
+    <path d="M 800 300 L 800 330 L 824 330 L 824 300 Q 812 285 800 300 Z"/>
+    <path d="M 850 300 L 850 330 L 874 330 L 874 300 Q 862 285 850 300 Z"/>
+    <path d="M 900 300 L 900 330 L 924 330 L 924 300 Q 912 285 900 300 Z"/>
+    <path d="M 950 300 L 950 330 L 974 330 L 974 300 Q 962 285 950 300 Z"/>
+  </g>
+
+  <!-- Ground shadow -->
+  <ellipse cx="600" cy="395" rx="560" ry="8" fill="#000" opacity="0.25"/>
+</svg>
